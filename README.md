@@ -1,6 +1,6 @@
 <h1 text-align="center">4Logic</h1> 
-## Repositório do projeto Save T-Rex
-### Observações Importantes
+<h2>Repositório do projeto Save T-Rex</h2>
+<h3>Observações Importantes<h3>
  - Os arquivos devem estar na mesma pasta
  - O arquivo "main.c" é o arquivo principal e executável
  - O arquivo "functions.h" é uma biblioteca criada pelo grupo com várias funções fundamentais usadas no "main.c"
