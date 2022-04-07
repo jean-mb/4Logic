@@ -1,7 +1,7 @@
 # 4Logic
 Repositório para um projeto de faculdade :D
 ----
- - Jean Moschen
+ - Jean 
  - Jesian
  - João Arfelli
  - João 
