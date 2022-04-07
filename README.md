@@ -1,4 +1,4 @@
-# 4Logic
+<center># 4Logic</center>
 ## Repositório do projeto Save T-Rex
 ### Observações Importantes
  - Os arquivos devem estar na mesma pasta
