@@ -1,5 +1,8 @@
-#include "functions.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <locale.h>
+#include <windows.h>
+#include "functions.h"
 
 int main()
 {
@@ -34,7 +37,7 @@ int main()
                 printf ("\n======== Não há essa opção! ======== \n");
                 break;
         }
-        limpa_tela(1000);
+        limpa_tela(2000);
     }while(opcao != 5 );
     return 0;
 }

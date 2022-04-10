@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1649607317 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<windows.h>
+	"functions.h"
+
+1649607021 c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\functions.h
+
+1649607317 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<locale.h>
+	"functions.h"
+
+1649607317 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"functions.h"
+
