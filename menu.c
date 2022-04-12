@@ -43,25 +43,36 @@ int jogador() // Pede o nick do jogador
     return 0;
 }
 
-int ranking() // "Registra" o nick e a pontuacao do jogador.
-{
-    char nome[20];
-    int pontuacao;
+int ranking(){// "Registra" o nick e a pontuacao do jogador.
 
-    printf("\nRANKING\n------------- \n");
+    struct sistema_pontuacao {
+        char nome [50];
+        int pontuacao;
+    };
+    struct sistema_pontuacao jogador[10];
 
-    fflush(stdin); //apaga o ENTER quando a funcao "gets" for captar uma string
-    printf("Digite seu nick: ");
-    gets(nome); // Guarda o texto inserido pelo usuario, incluindo espaços em branco.
-    printf("Digite sua pontuação: ");
-    scanf("%d", &pontuacao);
+    for(int i=0;i<10;i++){
+        printf("==============================\n");
+        printf (" ---- JOGADOR %d ----\n",i+1);
+        printf (" - Digite seu nick >> ");
+        fflush (stdin);
+        fgets (jogador[i].nome,50,stdin);
+        printf (" - Digite sua pontuação >> ");
+        scanf ("%d", &jogador[i].pontuacao);
+        printf("==============================\n");
+        printf ("\tJOGADOR: %s \tPONTUAÇÃO: %d \n",jogador[i].nome, jogador[i].pontuacao);
+        printf("==============================\n");
+        limpa_tela(1000);
+    }
 
-    Sleep(1000);
-    printf("\n============================");
-    printf(" \n   JOGADOR: %s \n",nome);
-    printf("   PONTUAÇÃO: %d \n", pontuacao);
-    printf("============================");
-
+    printf("========== RANKING ========== \n");
+    for(int i=0; i<=9; i++){
+        printf(" -------- JOGADOR %d -------- \n", i+1);
+        printf(" - Jogador: %s ", jogador[i].nome);
+        printf(" - Pontuação: %d", jogador[i].pontuacao);
+        printf("\n\n");
+    }
+    system("pause");
     return 0;
 }
 
@@ -78,6 +89,6 @@ int menu(int *op){
     printf("\n - Digite sua opção: ");
     scanf("%d", &*op);
     limpa_tela(500);
-    return;
+    return 0;
 }
 
