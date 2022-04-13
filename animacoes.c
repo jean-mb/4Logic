@@ -14,7 +14,7 @@ int animacao_inicial () {
         "\t..........................  ###*(##########. ...............\n"
         "\t..........................  ###############. ...............\n"
         "\t..........................  #######*         ...............\n"
-        "\t........... ..  .......   ..######//////  ..................\n"
+        "\t........... ..  .......   ..##########    ..................\n"
         "\t........... *#  ....    ##########     .....................\n"
         "\t........... *##(/   /(############.*#  .....................\n"
         "\t........... *#####################     .....................\n"
@@ -30,7 +30,8 @@ int animacao_inicial () {
         printf ("Carregando...");
         Sleep (500);
         system ("cls");
-        printf("\t    ......................................................................\n"
+
+printf("\t ......................................................................\n"
        "\t ......................................................................\n"
         "\t......................................................................\n"
         "\t......................................................................\n"
@@ -39,7 +40,7 @@ int animacao_inicial () {
         "\t........................... ,##(/##########  .........................\n"
         "\t........................... ,##############  .........................\n"
         "\t........................... ,#######         .........................\n"
-        "\t............  #* ......    #######,       ............................\n"
+        "\t............  #* ......    ############     ..........................\n"
         "\t............  #/*      **#########/**  ...............................\n"
         "\t............  ####,  (############, #. ...............................\n"
         "\t............  ####################, ..................................\n"
@@ -56,7 +57,8 @@ int animacao_inicial () {
         printf("Carregando...");
         Sleep(500);
         system("cls");
-        printf("\t ............................................................\n"
+
+printf("\t ............................................................\n"
        "\t ............................................................\n"
         "\t............................................................\n"
         "\t............................................................\n"
@@ -66,7 +68,7 @@ int animacao_inicial () {
         "\t..........................  ###*(##########. ...............\n"
         "\t..........................  ###############. ...............\n"
         "\t..........................  #######*         ...............\n"
-        "\t........... ..  .......   ..######//////  ..................\n"
+        "\t........... ..  .......   ..##########    ..................\n"
         "\t........... *#  ....    ##########     .....................\n"
         "\t........... *##(/   /(############.*#  .....................\n"
         "\t........... *#####################     .....................\n"
@@ -82,7 +84,7 @@ int animacao_inicial () {
         printf ("Carregando...");
         Sleep (500);
         system ("cls");
-        printf("\t    ......................................................................\n"
+printf("\t    ......................................................................\n"
        "\t ......................................................................\n"
         "\t......................................................................\n"
         "\t......................................................................\n"
@@ -91,7 +93,7 @@ int animacao_inicial () {
         "\t........................... ,##(/##########  .........................\n"
         "\t........................... ,##############  .........................\n"
         "\t........................... ,#######         .........................\n"
-        "\t............  #* ......    #######,       ............................\n"
+        "\t............  #* ......    ############   ............................\n"
         "\t............  #/*      **#########/**  ...............................\n"
         "\t............  ####,  (############, #. ...............................\n"
         "\t............  ####################, ..................................\n"
@@ -159,15 +161,15 @@ int animacao_creditos() {
         "\t     ~~~ ~~~~  $$$$```$$$$$```$$$ã^`_\n"
         "\t   ~~~       $$$``$$`$$***$$$$$$ã^`_\n"
         "\t            $$````````$ã$$$$\n"
-        "\t           $$```````$ã^_$$    $$ã^`_             \n"
-        "\t          $$```````$$ã^_$$^  $$`$$ã^`_           \n"
-        "\t          $$`````$$ã^`_$ã^_  $$``$$ã^`_          \n"
-        "\t           $$$`$$ã^`_  $ã^_  $$```$$ã^`_         \n"
-        "\t             $$ã^`_    $ã_   $$`````$$ã^`_       \n"
-        "\t                       $ã^_   $$``````$$ã^`-     \n"
-        "\t                      $ã^_    $$`````$$ã^`_      \n"
-        "\t                     $ã^`_      $$``$$ã^`_       \n"
-        "\t                    $ã^`_         $$ã^`_         \n"
+        "\t           $$```````$ã^_$$    $$ã^`_\n"
+        "\t          $$```````$$ã^_$$^  $$`$$ã^`_\n"
+        "\t          $$`````$$ã^`_$ã^_  $$``$$ã^`_\n"
+        "\t           $$$`$$ã^`_  $ã^_  $$```$$ã^`_\n"
+        "\t             $$ã^`_    $ã_   $$`````$$ã^`_\n"
+        "\t                       $ã^_   $$``````$$ã^`-\n"
+        "\t                      $ã^_    $$`````$$ã^`_\n"
+        "\t                     $ã^`_      $$``$$ã^`_\n"
+        "\t                    $ã^`_         $$ã^`_\n"
         "\t                  $ã^`_\n"
         "\t                 $ã^`_\n"
         "\t               $ã^`_\n"
@@ -188,18 +190,18 @@ int animacao_creditos() {
         "\t                $$$$```$$$$$```$$$ã^`_\n"
         "\t              $$$``$$`$$***$$$$$$ã^`_\n"
         "\t            $$````````$ã$$$$\n"
-        "\t           $$```````$ã^_$$      ~~~~  ~~~~     ~~~~       \n"
-        "\t          $$```````$$ã^_$$^       ~~~~   ~~~  ~~~~        \n"
-        "\t          $$`````$$ã^`_$ã^_       $$ã^`_   ~~~~           \n"
-        "\t           $$$`$$ã^`_  $ã^_       $`$$ã^`_                \n"
-        "\t             $$ã^`_    $ã_        $```$$ã^`_                     \n"
-        "\t                       $ã^_       $$```$$ã^`_                \n"
-        "\t                      $ã^_        $$````$$ã^`_               \n"
-        "\t                     $ã^`_         $$````$$ã^`_              \n"
-        "\t                    $ã^`_           $$```$$ã^`_              \n"
-        "\t                  $ã^`_              $$``$ã^`_               \n"
-        "\t                $ã^`_                  $$ã^`_                \n"
-        "\t               $ã^`_                                     \n"
+        "\t           $$```````$ã^_$$      ~~~~  ~~~~     ~~~~\n"
+        "\t          $$```````$$ã^_$$^       ~~~~   ~~~  ~~~~\n"
+        "\t          $$`````$$ã^`_$ã^_       $$ã^`_   ~~~~\n"
+        "\t           $$$`$$ã^`_  $ã^_       $`$$ã^`_\n"
+        "\t             $$ã^`_    $ã_        $```$$ã^`_\n"
+        "\t                       $ã^_       $$```$$ã^`_\n"
+        "\t                      $ã^_        $$````$$ã^`_\n"
+        "\t                     $ã^`_         $$````$$ã^`_\n"
+        "\t                    $ã^`_           $$```$$ã^`_\n"
+        "\t                  $ã^`_              $$``$ã^`_\n"
+        "\t                $ã^`_                  $$ã^`_ \n"
+        "\t               $ã^`_                         \n"
         "\t              $ã^`_\n\n"
         "\t============================\n"
         "\t============================\n");
@@ -210,32 +212,32 @@ int animacao_creditos() {
 
 
 
-        printf("\n\n\n\n\t         4444444       ||                       \n"
-               "\t        44444444       ||                           \n"
-               "\t       444444444       ||                       \n"
-               "\t      4444  4444       ||                       \n"
-               "\t     44444  4444       ||                       \n"
-               "\t    4444444444444444   ||                     \n"
-               "\t   44444444444444444   ||                    \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
+printf("\n\n\n\n\t         4444444       ||\n"
+               "\t        44444444       ||\n"
+               "\t       444444444       ||\n"
+               "\t      4444  4444       ||\n"
+               "\t     44444  4444       ||\n"
+               "\t    4444444444444444   ||\n"
+               "\t   44444444444444444   ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
                "\t============================\n"
                "\t============================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444                              \n"
-               "\t        44444444                                  \n"
-               "\t       444444444                              \n"
-               "\t      4444  4444                              \n"
-               "\t     44444  4444                              \n"
-               "\t    4444444444444444                        \n"
-               "\t   44444444444444444                       \n"
-               "\t            4444                          \n"
-               "\t            4444                          \n"
-               "\t            4444                          \n"
+printf("\n\n\n\n\t         4444444          \n"
+               "\t        44444444          \n"
+               "\t       444444444          \n"
+               "\t      4444  4444          \n"
+               "\t     44444  4444          \n"
+               "\t    4444444444444444      \n"
+               "\t   44444444444444444      \n"
+               "\t            4444          \n"
+               "\t            4444          \n"
+               "\t            4444          \n"
                "\t============================\n"
                "\t============================\n");
 
@@ -245,16 +247,16 @@ int animacao_creditos() {
 
 
 
-        printf("\n\n\n\n\t         4444444       ||                       \n"
-               "\t        44444444       ||                           \n"
-               "\t       444444444       ||                       \n"
-               "\t      4444  4444       ||                       \n"
-               "\t     44444  4444       ||                       \n"
-               "\t    4444444444444444   ||                     \n"
-               "\t   44444444444444444   ||                    \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
+printf("\n\n\n\n\t         4444444       ||\n"
+               "\t        44444444       ||\n"
+               "\t       444444444       ||\n"
+               "\t      4444  4444       ||\n"
+               "\t     44444  4444       ||\n"
+               "\t    4444444444444444   ||\n"
+               "\t   44444444444444444   ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
                "\t============================\n"
                "\t============================\n");
 
@@ -263,32 +265,32 @@ int animacao_creditos() {
 
 
 
-        printf("\n\n\n\n\t         4444444                             \n"
-               "\t        44444444                               \n"
-               "\t       444444444                              \n"
-               "\t      4444  4444                             \n"
-               "\t     44444  4444                             \n"
-               "\t    4444444444444444                       \n"
-               "\t   44444444444444444                      \n"
-               "\t            4444                         \n"
-               "\t            4444                         \n"
-               "\t            4444                          \n"
+printf("\n\n\n\n\t         4444444       \n"
+               "\t        44444444       \n"
+               "\t       444444444       \n"
+               "\t      4444  4444       \n"
+               "\t     44444  4444       \n"
+               "\t    4444444444444444   \n"
+               "\t   44444444444444444   \n"
+               "\t            4444       \n"
+               "\t            4444       \n"
+               "\t            4444       \n"
                "\t============================\n"
                "\t============================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       ||                       \n"
-               "\t        44444444       ||                           \n"
-               "\t       444444444       ||                       \n"
-               "\t      4444  4444       ||                       \n"
-               "\t     44444  4444       ||                       \n"
-               "\t    4444444444444444   ||                     \n"
-               "\t   44444444444444444   ||                    \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
-               "\t            4444       ||                   \n"
+printf("\n\n\n\n\t         4444444       ||\n"
+               "\t        44444444       ||\n"
+               "\t       444444444       ||\n"
+               "\t      4444  4444       ||\n"
+               "\t     44444  4444       ||\n"
+               "\t    4444444444444444   ||\n"
+               "\t   44444444444444444   ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
+               "\t            4444       ||\n"
                "\t============================\n"
                "\t============================\n");
 
@@ -298,16 +300,16 @@ int animacao_creditos() {
 
 
 
-        printf("\n\n\n\n\t         4444444       LLLL           ||                       \n"
-               "\t        44444444       LLLL           ||                           \n"
-               "\t       444444444       LLLL           ||                       \n"
-               "\t      4444  4444       LLLL           ||                       \n"
-               "\t     44444  4444       LLLL           ||                       \n"
-               "\t    4444444444444444   LLLL           ||                     \n"
-               "\t   44444444444444444   LLLL           ||                    \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL           ||\n"
+               "\t        44444444       LLLL           ||\n"
+               "\t       444444444       LLLL           ||\n"
+               "\t      4444  4444       LLLL           ||\n"
+               "\t     44444  4444       LLLL           ||\n"
+               "\t    4444444444444444   LLLL           ||\n"
+               "\t   44444444444444444   LLLL           ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
                "\t========================================\n"
                "\t========================================\n");
 
@@ -316,32 +318,32 @@ int animacao_creditos() {
                system("cls");
 
 
-        printf("\n\n\n\n\t         4444444       LLLL                                  \n"
-               "\t        44444444       LLLL                                      \n"
-               "\t       444444444       LLLL                                  \n"
-               "\t      4444  4444       LLLL                                  \n"
-               "\t     44444  4444       LLLL                                  \n"
-               "\t    4444444444444444   LLLL                                \n"
-               "\t   44444444444444444   LLLL                             \n"
-               "\t            4444       LLLLLLLLLLLL                      \n"
-               "\t            4444       LLLLLLLLLLLL                      \n"
-               "\t            4444       LLLLLLLLLLLL                      \n"
+printf("\n\n\n\n\t         4444444       LLLL           \n"
+               "\t        44444444       LLLL           \n"
+               "\t       444444444       LLLL           \n"
+               "\t      4444  4444       LLLL           \n"
+               "\t     44444  4444       LLLL           \n"
+               "\t    4444444444444444   LLLL           \n"
+               "\t   44444444444444444   LLLL           \n"
+               "\t            4444       LLLLLLLLLLLL   \n"
+               "\t            4444       LLLLLLLLLLLL   \n"
+               "\t            4444       LLLLLLLLLLLL   \n"
                "\t========================================\n"
                "\t========================================\n");
 
                Sleep (200);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL           ||                       \n"
-               "\t        44444444       LLLL           ||                           \n"
-               "\t       444444444       LLLL           ||                       \n"
-               "\t      4444  4444       LLLL           ||                       \n"
-               "\t     44444  4444       LLLL           ||                       \n"
-               "\t    4444444444444444   LLLL           ||                     \n"
-               "\t   44444444444444444   LLLL           ||                    \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
-               "\t            4444       LLLLLLLLLLLL   ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL           ||\n"
+               "\t        44444444       LLLL           ||\n"
+               "\t       444444444       LLLL           ||\n"
+               "\t      4444  4444       LLLL           ||\n"
+               "\t     44444  4444       LLLL           ||\n"
+               "\t    4444444444444444   LLLL           ||\n"
+               "\t   44444444444444444   LLLL           ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
+               "\t            4444       LLLLLLLLLLLL   ||\n"
                "\t========================================\n"
                "\t========================================\n");
 
@@ -349,112 +351,112 @@ int animacao_creditos() {
                system("cls");
 
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO       ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO      ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO     ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO    ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO    ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO     ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO      ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO       ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        ||\n"
+               "\t        44444444       LLLL             OOOOOOOO       ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO      ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO     ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO    ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO    ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO     ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO      ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO       ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        ||\n"
                "\t=====================================================\n"
                "\t=====================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO                               \n"
-               "\t        44444444       LLLL             OOOOOOOO                                  \n"
-               "\t       444444444       LLLL            OOOO  OOOO                            \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO                            \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO                           \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO                         \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO                        \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO                         \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO                          \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO                           \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO      \n"
+               "\t        44444444       LLLL             OOOOOOOO     \n"
+               "\t       444444444       LLLL            OOOO  OOOO    \n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   \n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  \n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  \n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   \n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    \n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO     \n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO      \n"
                "\t=====================================================\n"
                "\t=====================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO       ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO      ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO     ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO    ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO    ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO     ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO      ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO       ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        ||\n"
+               "\t        44444444       LLLL             OOOOOOOO       ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO      ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO     ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO    ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO    ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO     ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO      ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO       ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        ||\n"
                "\t=====================================================\n"
                "\t=====================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG         ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG       ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG      ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG             ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG             ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG      ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG     ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG     ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG      ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG        ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG         ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG       ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG      ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG             ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG             ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG      ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG     ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG     ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG      ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG        ||\n"
                "\t==================================================================\n"
                "\t==================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG                                \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG                                  \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG                             \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG                                    \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG                                    \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG                           \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG                         \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG                        \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG                         \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG                          \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG     \n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG   \n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG  \n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG         \n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG         \n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG  \n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG \n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG \n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG  \n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG    \n"
                "\t==================================================================\n"
                "\t==================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG         ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG       ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG      ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG             ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG             ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG      ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG     ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG     ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG      ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG        ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG         ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG       ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG      ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG             ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG             ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG      ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG     ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG     ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG      ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG        ||\n"
                "\t==================================================================\n"
                "\t==================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii  ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii  ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG          ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii  ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii  ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii  ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii  ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii  ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii  ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii  ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii  ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii  ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG          ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii  ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii  ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii  ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii  ||\n"
                "\t===========================================================================\n"
                "\t===========================================================================\n");
 
@@ -462,80 +464,80 @@ int animacao_creditos() {
                system("cls");
 
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii                         \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii                             \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG                                 \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii                         \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii                         \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii                       \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii                      \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii                     \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii                     \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii                     \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii  \n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii  \n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG          \n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii  \n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii  \n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii  \n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii  \n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii  \n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii  \n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii  \n"
                "\t===========================================================================\n"
                "\t===========================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii  ||                       \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii  ||                           \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG          ||                       \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii  ||                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii  ||                       \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii  ||                     \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii  ||                    \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii  ||                   \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii  ||                   \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii  ||                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii  ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii  ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG          ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii  ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii  ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii  ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii  ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii  ||\n"
                "\t===========================================================================\n"
                "\t===========================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC     ||              \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC    ||              \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC   ||              \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC          ||              \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC          ||              \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC          ||              \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC          ||              \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC   ||              \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC    ||              \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC     ||              \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC     ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC    ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC   ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC          ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC          ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC          ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC          ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC   ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC    ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC     ||\n"
                "\t===========================================================================================\n"
                "\t===========================================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC                   \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC                  \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC                 \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC                       \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC                        \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC                        \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC                        \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC                 \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC                  \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC                   \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC     \n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC    \n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC   \n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC          \n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC          \n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC          \n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC          \n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC   \n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC    \n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC     \n"
                "\t===========================================================================================\n"
                "\t===========================================================================================\n");
 
                Sleep (100);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC     ||              \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC    ||              \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC   ||              \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC          ||              \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC          ||              \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC          ||              \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC          ||              \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC   ||              \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC    ||              \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC     ||              \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC     ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC    ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC   ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC          ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC          ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC          ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC          ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC   ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC    ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC     ||\n"
                "\t===========================================================================================\n"
                "\t===========================================================================================\n");
 
@@ -543,16 +545,16 @@ int animacao_creditos() {
                system("cls");
 
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC         ||              \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC        ||              \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC       ||              \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC              ||              \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC              ||              \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC              ||              \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC              ||              \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC       ||              \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...  ||              \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...  ||              \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC         ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC        ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC       ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC              ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC              ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC              ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC              ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC       ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...  ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...  ||\n"
                "\t==================================================================================================\n"
                "\t==================================================================================================\n");
 
@@ -560,32 +562,32 @@ int animacao_creditos() {
                system("cls");
 
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC                       \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC                      \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC                     \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC                            \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC                            \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC                            \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC                            \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC                     \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...                \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...                \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC       \n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC      \n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC     \n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC            \n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC            \n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC            \n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC            \n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC     \n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...\n"
                "\t==================================================================================================\n"
                "\t==================================================================================================\n");
 
                Sleep (200);
                system("cls");
 
-        printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC         ||              \n"
-               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC        ||              \n"
-               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC       ||              \n"
-               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC              ||              \n"
-               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC              ||              \n"
-               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC              ||              \n"
-               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC              ||              \n"
-               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC       ||              \n"
-               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...  ||              \n"
-               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...  ||              \n"
+printf("\n\n\n\n\t         4444444       LLLL              OOOOOO        GGGGGG       iiii     CCCCCCC         ||\n"
+               "\t        44444444       LLLL             OOOOOOOO      GGGGGGGGG     iiii    CCCCCCCCC        ||\n"
+               "\t       444444444       LLLL            OOOO  OOOO    GGGG   GGGG           CCCC   CCCC       ||\n"
+               "\t      4444  4444       LLLL           OOOO    OOOO   GGGG           iiii   CCCC              ||\n"
+               "\t     44444  4444       LLLL          OOOO      OOOO  GGGG           iiii   CCCC              ||\n"
+               "\t    4444444444444444   LLLL          OOOO      OOOO  GGGG  GGGGG    iiii   CCCC              ||\n"
+               "\t   44444444444444444   LLLL           OOOO    OOOO   GGGG  GGGGGG   iiii   CCCC              ||\n"
+               "\t            4444       LLLLLLLLLLLL    OOOO  OOOO    GGGG    GGGG   iiii   CCCC   CCCC       ||\n"
+               "\t            4444       LLLLLLLLLLLL     OOOOOOOO      GGGGGGGGGG    iiii    CCCCCCCCC   ...  ||\n"
+               "\t            4444       LLLLLLLLLLLL      OOOOOO        GGGGGGG      iiii     CCCCCCC    ...  ||\n"
                "\t==================================================================================================\n"
                "\t==================================================================================================\n");
 
