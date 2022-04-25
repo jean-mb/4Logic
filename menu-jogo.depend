@@ -8,16 +8,56 @@
 
 1649607021 c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\functions.h
 
-1649804082 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\menu.c
+1649804977 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\menu.c
 	<stdio.h>
 	<stdlib.h>
 	<Windows.h>
 	<locale.h>
 	"functions.h"
 
-1649607317 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
+1650408344 source:c:\users\jeanf\onedrive\햞ea de trabalho\hub\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	"functions.h"
+
+1650734739 source:d:\hub\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"functions.h"
+
+1650734739 d:\hub\uniamerica\eng_software\jogo\menu-jogo\functions.h
+
+1650734739 source:d:\hub\uniamerica\eng_software\jogo\menu-jogo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<windows.h>
+	"functions.h"
+
+1650734739 source:d:\hub\uniamerica\eng_software\jogo\menu-jogo\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<locale.h>
+	"functions.h"
+
+1650929351 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"functions.h"
+
+1650929669 c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\functions.h
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<locale.h>
+
+1650932527 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\main.c
+	"functions.h"
+
+1650934172 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\menu.c
 	"functions.h"
 
