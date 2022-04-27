@@ -34,7 +34,7 @@ int jogar(int *p_contador) // Ponteiro para o contador do menu principal
     struct aux testa_string; // struct auxiliar pra guardar nick do usuario para depois comparar com outra struct
     animacao_dino();
     //------
-    printf("=================================\n");
+    printf("============== JOGADOR %d ==============\n", *p_contador+1);
     printf(" ---- CADASTRE SEU USUÁRIO ----\n");
     printf(" - Digite seu nick >> ");
     fflush(stdin);

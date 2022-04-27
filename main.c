@@ -23,7 +23,7 @@ int main()
                 break;
 
             case 4:
-                printf ("\nSaindo... \n");
+                animacao_tchau();
                 break;
 
             default:

@@ -61,3 +61,18 @@
 1650934172 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\menu.c
 	"functions.h"
 
+1651092716 source:c:\users\jeanf\downloads\4logic-main\4logic-main\animacoes.c
+	"functions.h"
+
+1651092518 c:\users\jeanf\downloads\4logic-main\4logic-main\functions.h
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<locale.h>
+
+1651092518 source:c:\users\jeanf\downloads\4logic-main\4logic-main\main.c
+	"functions.h"
+
+1651092617 source:c:\users\jeanf\downloads\4logic-main\4logic-main\menu.c
+	"functions.h"
+

@@ -14,10 +14,11 @@
     int limpa_tela(int tempo);
     int mostra_menu();
     // ==================
-    int animacao_creditos();
-    int animacao_dino();
-    int animacao_inicial();
-    int animacao_piscando();
+    void animacao_creditos(void);
+    void animacao_dino(void);
+    void animacao_inicial(void);
+    void animacao_piscando(void);
+    void animacao_tchau(void);
     //===================
 
     typedef struct {
