@@ -43,36 +43,21 @@
 	<locale.h>
 	"functions.h"
 
-1650929351 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
+1653838893 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\animacoes.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	"functions.h"
 
-1650929669 c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\functions.h
+1653837399 c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\functions.h
 	<stdio.h>
 	<stdlib.h>
 	<Windows.h>
 	<locale.h>
 
-1650932527 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\main.c
+1653838051 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\main.c
 	"functions.h"
 
-1650934172 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\menu.c
-	"functions.h"
-
-1651092716 source:c:\users\jeanf\downloads\4logic-main\4logic-main\animacoes.c
-	"functions.h"
-
-1651092518 c:\users\jeanf\downloads\4logic-main\4logic-main\functions.h
-	<stdio.h>
-	<stdlib.h>
-	<Windows.h>
-	<locale.h>
-
-1651092518 source:c:\users\jeanf\downloads\4logic-main\4logic-main\main.c
-	"functions.h"
-
-1651092617 source:c:\users\jeanf\downloads\4logic-main\4logic-main\menu.c
+1653842995 source:c:\users\jeanf\onedrive\documentos\uniamerica\eng_software\jogo\menu-jogo\menu.c
 	"functions.h"
 

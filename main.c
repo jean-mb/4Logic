@@ -3,27 +3,31 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int opcao, contador = 0; //contador pra saber qual posicao guardar cadastro do jogador
-    animacao_inicial();
+    contador=0;
+    le_ranking();
+    int opcao; //contador pra saber qual posicao guardar cadastro do jogador
     do{
-        menu(&opcao);
+        mostra_menu();
+        opcao = menu();
         switch(opcao)
         {
             case 1:
-                jogar(&contador);
-                contador++; // aumenta contador a cada loop em que a opcao "jogar" for escolhida
+                jogar();
                 break;
 
             case 2:
-                ranking();
+                mostra_ranking('c');
+                system("pause");
+
                 break;
 
             case 3:
                 creditos();
                 break;
 
-            case 4:
-                animacao_tchau();
+            case 0:
+                salvar();
+                printf("\tSaindo... Volte sempre!");
                 break;
 
             default:
@@ -31,6 +35,6 @@ int main()
                 break;
         }
         limpa_tela(1000);
-    }while(opcao != 4 );
+    }while(opcao != 0 );
     return 0;
 }

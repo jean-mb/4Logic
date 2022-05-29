@@ -1,6 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 #include "functions.h"
 
-void animacao_inicial (void) {
+int animacao_inicial () {
        printf("\t ............................................................\n"
        "\t ............................................................\n"
         "\t............................................................\n"
@@ -114,9 +117,10 @@ void animacao_inicial (void) {
                 "\t              |_____/_/    \_\/   |______|    |_|      |_|  \_\______/_/ \_\  \n\n\n");
         Sleep (1000);
         system ("cls");
+        return 0;
 }
 
-void animacao_creditos(void) {
+int animacao_creditos() {
     printf("\t               $$$$^-ã        $$$$$ã^`_\n"
         "\t             $$$```$$$^-ã    $$``$$$ã^`_\n"
         "\t            $$```````$$$^-ã  $$````$$ã^`_\n"
@@ -587,11 +591,13 @@ void animacao_creditos(void) {
 
                Sleep (400);
                system("cls");
+
+    return 0;
 }
 
-void animacao_dino(void)
+int animacao_dino()
 {
-    int loop = 0, repeticoes = 1;
+    int loop = 0, repeticoes = 2, velocidade = 50;
     do{
       printf("\t                     /*#####/*                                                         OOOOOOOOOOO     \n"
              "\t                      */###*                                                         OOOOOOOOOOOOOOO   \n"
@@ -615,8 +621,7 @@ void animacao_dino(void)
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
 
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
 
       printf("\t                    * /#####/ *                                                       OOOOOOOOOOO      \n"
@@ -643,9 +648,7 @@ void animacao_dino(void)
 
 
 
-             Sleep (100);
-             system ("cls");
-
+             limpa_tela(velocidade);
 
       printf("\t              *  */###/// *                                                        OOOOOOOOOOO         \n"
              "\t               * /#####/ *                                                       OOOOOOOOOOOOOOO       \n"
@@ -671,8 +674,7 @@ void animacao_dino(void)
 
 
 
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
       printf("\t                 */###/*/                                                        OOOOOOOOOOO          \n"
              "\t               */ #####/ *                                                     OOOOOOOOOOOOOOO        \n"
@@ -696,12 +698,7 @@ void animacao_dino(void)
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
 
-
-
-             Sleep (100);
-             system ("cls");
-
-
+             limpa_tela(velocidade);
 
       printf("\t               */*/###//* *                                                   OOOOOOOOOOO             \n"
              "\t                */##### /*                                                  OOOOOOOOOOOOOOO           \n"
@@ -725,10 +722,7 @@ void animacao_dino(void)
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
 
-
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
       printf("\t             * /*/###//*                                                     OOOOOOOOOOO              \n"
              "\t              * /##### /*                                                  OOOOOOOOOOOOOOO            \n"
@@ -751,11 +745,7 @@ void animacao_dino(void)
              "\t| |___  |  ||__||  |  | |---| |  -  | |       | |---|   |    |  |    |    |  |  -   | | |---| | |_| | | |_| | \n"
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
-
-
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
       printf("\t            */ /###/*/ *                                                    OOOOOOOOOOO               \n"
              "\t             /*#####/*                                                    OOOOOOOOOOOOOOO             \n"
              "\t             */##### / *                                                 OOOOOOOOOOOOOOOOO            \n"
@@ -779,9 +769,7 @@ void animacao_dino(void)
              "\t                                                                                         //                   \n");
 
 
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
       printf("\t          *   /*/ */ /*                                                      OOOOOOOOOOO              \n"
              "\t           */*/###/ // *                                                   OOOOOOOOOOOOOOO            \n"
              "\t            //#####/*/                    ##,########                     OOOOOOOOOOOOOOOOO           \n"
@@ -804,10 +792,7 @@ void animacao_dino(void)
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
 
-
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
       printf("\t             */*// //*/ *                                                   OOOOOOOOOOO               \n"
              "\t          * // /*/// /*                                                   OOOOOOOOOOOOOOO             \n"
              "\t          / *###//*/*                       ##,########                  OOOOOOOOOOOOOOOOO            \n"
@@ -831,9 +816,7 @@ void animacao_dino(void)
              "\t                                                                                         //                   \n");
 
 
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
       printf("\t           / */ /*/*/  *                                                    OOOOOOOOOOO               \n"
              "\t       * / */ /*/ / /*                                                    OOOOOOOOOOOOOOO             \n"
@@ -856,12 +839,7 @@ void animacao_dino(void)
              "\t| |___  |  ||__||  |  | |---| |  -  | |       | |---|   |    |  |    |    |  |  -   | | |---| | |_| | | |_| | \n"
              "\t|_____| |__|    |__|   |____| |_____| |__||___| |______|     |__|    |__||_|  |____|   |____| |_| |_| |_____| \n"
              "\t                                                                                         //                   \n");
-
-
-
-             Sleep (100);
-             system ("cls");
-
+             limpa_tela(velocidade);
 
       printf("\t           /*/ /  *                                                         OOOOOOOOOOO               \n"
              "\t        */  / /*/  *                                                      OOOOOOOOOOOOOOO             \n"
@@ -886,10 +864,7 @@ void animacao_dino(void)
              "\t                                                                                         //                   \n");
 
 
-
-             Sleep (100);
-             system ("cls");
-
+             limpa_tela(velocidade);
       printf("\t        *   */ */ / *                                                       OOOOOOOOOOO               \n"
              "\t         *  */ /*/                                                        OOOOOOOOOOOOOOO             \n"
              "\t      *  / /*/ // *                                 ##,########          OOOOOOOOOOOOOOOOO            \n"
@@ -913,9 +888,7 @@ void animacao_dino(void)
              "\t                                                                                         //                   \n");
 
 
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
       printf("\t        * /*//  * *                                                        OOOOOOOOOOO                \n"
              "\t    */ */ / //* /                                                        OOOOOOOOOOOOOOO              \n"
@@ -940,9 +913,7 @@ void animacao_dino(void)
              "\t                                                                                         //                   \n");
 
 
-
-             Sleep (100);
-             system ("cls");
+             limpa_tela(velocidade);
 
       printf("\t         *  */                                                            OOOOOOOOOOO                 \n"
              "\t      *  /*//|/                                                         OOOOOOOOOOOOOOO               \n"
@@ -968,127 +939,5 @@ void animacao_dino(void)
         system("cls");
         loop++;
     }while(loop < repeticoes);
-}
-void animacao_tchau(void)
-{
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####  #        \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####   #       \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####           \n"
-           "\t   ##   /###########       \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####   #       \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####  #        \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####  #        \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####   #       \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####           \n"
-           "\t   ##   /###########       \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####   #       \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
-
-    printf("\t            ##,#######     \n"
-           "\t            ##########     \n"
-           "\t   #       #####  #        \n"
-           "\t   ##   /##########        \n"
-           "\t   #############           \n"
-           "\t     ,########,            \n"
-           "\t       ,## ##              \n"
-           "\t        #.  #  *           \n");
-
-    Sleep(100);
-    system("cls");
+    return 0;
 }
