@@ -8,22 +8,28 @@
     FILE *p_ranking;
     int contador;
     // FUNCOES
-    int le_ranking();
-    int organiza_ranking();
-    int menu();
-    int cadastra_jogador();
-    int jogar();
-    int mostra_ranking(char modo);
-    int creditos();
-    int salvar();
+
+    /* ===================== FUNCOES PRATICAS=======================*/
     int limpa_tela(int tempo);
     int mostra_menu();
-    // ==================
+    int creditos();
+    int menu();
+
+    /* ===================== FUNÇOES DE RANKING ====================*/
+    int le_ranking();
+    int organiza_ranking();
+    int mostra_ranking(char modo);
+
+    /* ===================== FUNCOES DO MENU =======================*/
+    int cadastra_jogador();
+    int jogar();
+    int salvar();
+    /* ===================== ANIMAÇÕES =============================*/
     int animacao_creditos();
     int animacao_dino();
     int animacao_inicial();
     int animacao_piscando();
-    //===================
+    //==============================================================
 
     typedef struct {
         char nick [50];
@@ -31,4 +37,5 @@
     }sistema_pontuacao;
     sistema_pontuacao ranking[TAM];
     sistema_pontuacao aux[2];
+
 #endif // FUNCTIONS_H_INCLUDED

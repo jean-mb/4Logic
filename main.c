@@ -12,16 +12,19 @@ int main()
         switch(opcao)
         {
             case 1:
+                organiza_ranking();
                 jogar();
+                animacao_dino();
                 break;
 
             case 2:
+                organiza_ranking();
                 mostra_ranking('c');
                 system("pause");
-
                 break;
 
             case 3:
+                animacao_creditos();
                 creditos();
                 break;
 

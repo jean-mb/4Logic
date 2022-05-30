@@ -28,7 +28,14 @@ int mostra_menu()  // Arranjo de prints para mostrar o MENU
 
 int creditos() // Mostra o nome da equipe e integrantes
 {
-    animacao_creditos();
+    printf("\t\t\t\t EQUIPE \n");
+    printf("\t\t\t_________________________\n\n");
+    printf("\t\t\t  >> Vincius Gabriel \n");
+    printf("\t\t\t  >> Jean Moschen \n");
+    printf("\t\t\t  >> Jesian Vieira\n");
+    printf("\t\t\t  >> João Pedro \n");
+    printf("\t\t\t  >> Tiago Guiland \n\n\n");
+    system("pause");
     limpa_tela(500);
     return 0;
 }
@@ -50,6 +57,13 @@ int le_ranking() // Abre o arquivo jogadores.txt, lê os dados do arquivo, e joga
     p_ranking = fopen("jogadores.txt", "r"); //abre arquivo em modo de leitura
     char c;
 
+    if(p_ranking == NULL)
+    {
+        printf("Erro na abertura do arquivo");
+        system("pause");
+        exit(1);
+    }
+
     for(int i=0; !feof(p_ranking); i++)
     {
         fscanf(p_ranking,"%d", &ranking[i].pontuacao);//importa a pontuação
@@ -63,9 +77,12 @@ int le_ranking() // Abre o arquivo jogadores.txt, lê os dados do arquivo, e joga
             ranking[i].nick[a]= c;
         }
     }
-    for(int i=0; i<TAM; i++){
-        if(ranking[i].pontuacao == 0){// acha em que ponto o ranking esta completo
-            contador = i-1;
+    for(int i=0; i<TAM+1; i++)
+    {
+        if(ranking[i].pontuacao == 0) // acha em que ponto o ranking esta completo
+        {
+            contador = i;
+            break;
         }
     }
     fclose(p_ranking);
@@ -74,14 +91,19 @@ int le_ranking() // Abre o arquivo jogadores.txt, lê os dados do arquivo, e joga
 
 int organiza_ranking() // Organiza o ranking por bubble sort
 {
-  for (int contador=0; contador<TAM; contador++)
+    for (int a=0; a<TAM; a++)
     {
-        for (int i=0; i<TAM; i++)
+        for (int i=0; i<TAM-1; i++)
         {
             if (ranking[i].pontuacao<ranking[i+1].pontuacao) // bubble sort em ordem decrescente
             {
-                aux[0] = ranking[i];
-                ranking[i] = ranking[i+1];
+                strcpy(aux[0].nick, ranking[i].nick);
+                aux[0].pontuacao = ranking[i].pontuacao;
+
+                strcpy(ranking[i].nick, ranking[i+1].nick);
+                ranking[i].pontuacao = ranking[i+1].pontuacao;
+
+                strcpy(ranking[i+1].nick, aux[0].nick);
                 ranking[i+1] = aux[0];
             }
         }
@@ -102,18 +124,19 @@ int mostra_ranking(char modo) // Mostra o ranking de acordo com o modo de exibic
     {
         if(ranking[i].pontuacao!=0) // se a pontuacao eh zero, nao eh exibida no ranking
         {
-            switch(modo){
-                case 'n':
-                    printf ("\t\t\t%d° | %s\n",i+1,ranking[i].nick);
-                    break;
-                case 'p':
-                    printf ("\t\t\t%d° %4d\n",ranking[i].pontuacao);
-                    break;
-                case 'c':
-                default:
-                    printf ("\t\t%d° | %s\t>> ",i+1,ranking[i].nick);
-                    printf ("%4d\n",ranking[i].pontuacao);
-                    break;
+            switch(modo)
+            {
+            case 'n':
+                printf ("\t\t\t%d° | %s\n",i+1,ranking[i].nick);
+                break;
+            case 'p':
+                printf ("\t\t\t%d° %4d\n",ranking[i].pontuacao);
+                break;
+            case 'c':
+            default:
+                printf ("\t\t%d° | %s \t>> ",i+1,ranking[i].nick);
+                printf ("%4d\n",ranking[i].pontuacao);
+                break;
             }
         }
         else break;
@@ -126,7 +149,7 @@ int mostra_ranking(char modo) // Mostra o ranking de acordo com o modo de exibic
 
 int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
 {
-    int existe,index; // Variaveis auxiliares para testar se uma string existe
+    int existe,index=0; // Variaveis auxiliares para testar se uma string existe
     printf("\n\n\t ================ CADASTRE SEU USUÁRIO ================\n");
     printf("\n\t -> Digite seu nick \t\t>> ");
     fflush(stdin);
@@ -147,25 +170,33 @@ int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
     }
     else if (contador >=TAM)
     {
-        printf("\n\t -> Digite sua pontuação \t>> ");
+        printf("\t -> Digite sua pontuação \t>> ");
         scanf("%d", &aux[0].pontuacao);
         for(int i=0; i<TAM; i++)
         {
             if (aux[0].pontuacao > ranking[i].pontuacao)
             {
                 index=i;
-                for(index; index<TAM; index++)
+                for(int troca = index; troca<TAM; troca++)
                 {
-                    aux[1] = ranking[index];
-                    ranking[index] = aux[0];
+                    strcpy(aux[1].nick, ranking[troca].nick);
+                    aux[1].pontuacao = ranking[troca].pontuacao;
+
+                    strcpy(ranking[troca].nick, aux[0].nick);
+                    ranking[troca] = aux[0];
+
+                    strcpy(aux[0].nick, aux[1].nick);
                     aux[0] = aux[1];
                 }
                 break;
             }
         }
+
+        printf("\n\n\t\tJOGADOR ADICIONADO! \n");
+        printf("\t__________________________________\n");
+        printf("\n\t\t  JOGADOR: %s \n\t\t  PONTUAÇÃO: %d \n",ranking[index].nick, ranking[index].pontuacao);
         printf("============================================\n");
-        printf("\tJOGADOR: %s \tPONTUAÇÃO: %d \n",ranking[index].nick, ranking[index].pontuacao);
-        printf("============================================\n");
+        contador++;
     }
     else
     {
@@ -173,7 +204,8 @@ int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
         strcpy(ranking[contador].nick, aux[0].nick);
         printf("\t -> Digite sua pontuação \t>> ");
         scanf("%d", &ranking[contador].pontuacao);
-        printf("============================================\n");
+        printf("\n\n\t\tJOGADOR ADICIONADO! \n");
+        printf("\t__________________________________\n");
         printf("\tJOGADOR: %s \tPONTUAÇÃO: %d \n",ranking[contador].nick, ranking[contador].pontuacao);
         printf("============================================\n");
         contador++;
@@ -190,25 +222,35 @@ int jogar() // Futuro jogo
 
     existe = ranking[opc-1].pontuacao != 0;
 
-    if(opc == 0){
+    if(opc == 0)
+    {
         cadastra_jogador();
     }
-    else if(existe){
+    else if(existe)
+    {
         printf("\n\n\n\n\n\t\t\t\t\tJogador >> %s <<  selecionado!\n\n\n\n\n\n\n", ranking[opc-1].nick);
-    }else{
+    }
+    else
+    {
         printf("\n\n\t\t\t >> Essa posição não está ocupada no ranking! Cadastre um Novo Jogador!");
         limpa_tela(5000);
         cadastra_jogador();
     }
     system("pause");
     limpa_tela(10);
-    animacao_dino();
     return 0;
 }
 
 int salvar() // Salva
 {
+    organiza_ranking();
     p_ranking = fopen("jogadores.txt", "w");
+    if(p_ranking == NULL)
+    {
+        printf("Erro na abertura do arquivo");
+        system("pause");
+        exit(1);
+    }
     for (int i=0; i<TAM; i++)
     {
         if(ranking[i].pontuacao !=0)
