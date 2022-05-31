@@ -17,7 +17,7 @@
 ---
 - <code>int limpa_tela(int tempo);</code> -> Recebe como parametro o tempo em _ms_ e procede: Espera o tempo informado -> limpa o prompt -> espera o tempo informado.
 - <code>int menu();</code> -> Pede pro usuário digitar qual opção deseja, e retorna o valor digitado pelo usuário
-- <code>int le_ranking();</code> -> Lê o arquivo txt, executa _fscanf_ para pegar a pontuação, e logo em seguida recolha o nick, caracter a caracter.
+- <code>int le_ranking();</code> -> Abre o arquivo "jogadores.txt" em formato _r_, Lê o arquivo txt, executa _fscanf_ para pegar a pontuação, e logo em seguida recolhe o nick, caracter a caracter. Ao chegar na útima linha, fecha o arquivo.
 - <code>int organiza_ranking();</code> -> Organiza o ranking por BubbleSort em ordem decrescente. 
 - <code>int mostra_ranking(char modo);</code> -> Mostra o ranking de acordo com o modo de exibição inserido no parâmetro. <br>'c' -> completo = nick e pontuacao<br>'p' -> apenas pontuacao<br>'n' -> apenas nick<br>Outros -> nick e pontuação
 - <code>int cadastra_jogador();</code> -> Cadastra jogador seguindo as regras: Se existir um nick igual, apenas trocar a pontuação > Se o ranking está cheio, colocar na posição certa > Caso contrário, cadastrar no ranking, levando em conta como índice, a váriavel global _contador_. Incrementa a váriavel _contador_ no final do cadastro (a não ser que o nick já existia, nesse caso o contador não sofre alterações porquê o ranking não ganhou novas posições e sim substituiu uma existente)
