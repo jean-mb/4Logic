@@ -597,7 +597,7 @@ int animacao_creditos() {
 
 int animacao_dino()
 {
-    int loop = 0, repeticoes = 2, velocidade = 50;
+    int loop = 0, repeticoes = 1, velocidade = 50;
     do{
       printf("\t                     /*#####/*                                                         OOOOOOOOOOO     \n"
              "\t                      */###*                                                         OOOOOOOOOOOOOOO   \n"

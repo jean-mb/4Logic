@@ -64,24 +64,24 @@ int le_ranking() // Abre o arquivo jogadores.txt, lê os dados do arquivo, e joga
         exit(1);
     }
 
-    for(int i=0; !feof(p_ranking); i++)
+    for(int i=0; !feof(p_ranking); i++) //percorre as linhas até o final do arquivo
     {
-        fscanf(p_ranking,"%d", &ranking[i].pontuacao);//importa a pontuação
+        fscanf(p_ranking,"%d", &ranking[i].pontuacao);//importa a pontuação da linha i
         for(int a= 0; a < 10; a++)//importa nicks, caracter por carcater, evitando quebras de linha
         {
             c = fgetc(p_ranking);
             if(c=='\n' || c==EOF) //evita quebra de linhas e fim de arquivo
             {
-                break;
+                break; //quando chegar em uma quebra de linha, ir para a próxima
             }
-            ranking[i].nick[a]= c;
+            ranking[i].nick[a]= c; // guarda o caracter recolhido no index "a" do nick, na posição "i" do ranking
         }
     }
     for(int i=0; i<TAM+1; i++)
     {
         if(ranking[i].pontuacao == 0) // acha em que ponto o ranking esta completo
         {
-            contador = i;
+            contador = i; // passa para o contador a primeira posição vazia do ranking
             break;
         }
     }
@@ -113,11 +113,6 @@ int organiza_ranking() // Organiza o ranking por bubble sort
 
 int mostra_ranking(char modo) // Mostra o ranking de acordo com o modo de exibicao
 {
-    /*
-        'c' -> completo = nick e pontuacao
-        'p' -> apenas pontuacao
-        'n' -> apenas nick
-    */
     printf("\t\t\t RANKING \n");
     printf("\t\t__________________________\n\n");
     for (int i=0; i<TAM; i++)
@@ -126,13 +121,13 @@ int mostra_ranking(char modo) // Mostra o ranking de acordo com o modo de exibic
         {
             switch(modo)
             {
-            case 'n':
+            case 'n': //apenas nick
                 printf ("\t\t\t%d° | %s\n",i+1,ranking[i].nick);
                 break;
-            case 'p':
+            case 'p': // apenas pontuacao
                 printf ("\t\t\t%d° %4d\n",ranking[i].pontuacao);
                 break;
-            case 'c':
+            case 'c': // pontuacao e nick
             default:
                 printf ("\t\t%d° | %s \t>> ",i+1,ranking[i].nick);
                 printf ("%4d\n",ranking[i].pontuacao);
@@ -168,15 +163,15 @@ int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
         printf("\n\t -> Digite sua pontuação \t>> ");
         scanf("%d", &ranking[index].pontuacao);
     }
-    else if (contador >=TAM)
+    else if (contador >=TAM) // caso o ranking ja esteja cheio
     {
         printf("\t -> Digite sua pontuação \t>> ");
-        scanf("%d", &aux[0].pontuacao);
+        scanf("%d", &aux[0].pontuacao); // guarda em uma struct auxiliar
         for(int i=0; i<TAM; i++)
         {
-            if (aux[0].pontuacao > ranking[i].pontuacao)
+            if (aux[0].pontuacao > ranking[i].pontuacao) // acha a posicao no ranking ideal para encaixar a nova pontuação
             {
-                index=i;
+                index=i; //aponta a posicao ideal
                 for(int troca = index; troca<TAM; troca++)
                 {
                     strcpy(aux[1].nick, ranking[troca].nick);
@@ -194,8 +189,8 @@ int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
 
         printf("\n\n\t\tJOGADOR ADICIONADO! \n");
         printf("\t__________________________________\n");
-        printf("\n\t\t  JOGADOR: %s \n\t\t  PONTUAÇÃO: %d \n",ranking[index].nick, ranking[index].pontuacao);
-        printf("============================================\n");
+        printf("\n\t  JOGADOR: %s \tPONTUAÇÃO: %d \n",ranking[index].nick, ranking[index].pontuacao);
+        printf("\n\t==================================\n\n");
         contador++;
     }
     else
@@ -206,8 +201,8 @@ int cadastra_jogador() // Cadastra jogador no ranking de acordo com o contador
         scanf("%d", &ranking[contador].pontuacao);
         printf("\n\n\t\tJOGADOR ADICIONADO! \n");
         printf("\t__________________________________\n");
-        printf("\tJOGADOR: %s \tPONTUAÇÃO: %d \n",ranking[contador].nick, ranking[contador].pontuacao);
-        printf("============================================\n");
+        printf("\n\t  JOGADOR: %s \tPONTUAÇÃO: %d \n",ranking[contador].nick, ranking[contador].pontuacao);
+        printf("\n\t==================================\n\n");
         contador++;
     }
     return 0;
@@ -218,19 +213,27 @@ int jogar() // Futuro jogo
     int opc, existe;
     mostra_ranking('n');
     printf("\n\t\t     0 >> Criar Novo \n");
-    opc = menu();
+    opc = menu(); // capta a opc do usuário
+    /*
+        - indice em que o nome do jogador é exibido na tela
+        - numero 0 para cadastrar novo
+    */
 
-    existe = ranking[opc-1].pontuacao != 0;
+    existe = ranking[opc-1].pontuacao != 0; // testa se a opcao selecionada pelo usuário existe no ranking
+    /*
+        obs.: esse opc-1 é porque o ranking é exibido para o usuário a partir do numero 1, porém o ranking tem como primeiro indice o numero 0. Logo, a opcao do usuário sempre
+        está localizada no ranking uma posição atrás
+    */
 
-    if(opc == 0)
+    if(opc == 0) // se escolheu 0, Criar Novo jogador
     {
         cadastra_jogador();
     }
-    else if(existe)
+    else if(existe) // se existe, apenas exibe a mensagem que selecionou o jogaodor
     {
         printf("\n\n\n\n\n\t\t\t\t\tJogador >> %s <<  selecionado!\n\n\n\n\n\n\n", ranking[opc-1].nick);
     }
-    else
+    else // caso a posicao nao exista, criar um novo jogador
     {
         printf("\n\n\t\t\t >> Essa posição não está ocupada no ranking! Cadastre um Novo Jogador!");
         limpa_tela(5000);
@@ -251,9 +254,9 @@ int salvar() // Salva
         system("pause");
         exit(1);
     }
-    for (int i=0; i<TAM; i++)
+    for (int i=0; i<TAM; i++) // Percorre todo o ranking
     {
-        if(ranking[i].pontuacao !=0)
+        if(ranking[i].pontuacao !=0) //Se nao for zero, ou seja, existe, registra no txt
         {
             fprintf(p_ranking,"%d%s\n",ranking[i].pontuacao, ranking[i].nick);
         }
