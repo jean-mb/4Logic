@@ -11,7 +11,7 @@
 ### Váriaveis Globais
 ---
 - <code>FILE * p_arquivo</code> -> Ponteiro que aponta para o arquivo "jogadores.txt"
-- <code>int contador</code> -> Variável global que conta quantas vezes um jogador foi adicionado ao ranking
+- <code>int contador</code> -> Variável global que conta quantos jogadores foram adicionados ao ranking
 ---
 ### Funções
 ---
